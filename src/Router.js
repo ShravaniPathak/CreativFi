@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import SignIn from './components/SignIn';
+import Waitlist from './components/Waitlist';
+
 
 const AppRoutes = () => {
   return (
