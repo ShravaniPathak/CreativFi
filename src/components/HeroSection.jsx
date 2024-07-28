@@ -7,7 +7,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   const handleGetStarted = () => {
-    navigate('/login');
+    navigate('/waitlist');
   };
 
   return (
