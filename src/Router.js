@@ -11,6 +11,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/login" element={<SignIn />} />
+    <Route path="/waitlist" element={<Waitlist />} />
       </Routes>
     </Router>
   );
