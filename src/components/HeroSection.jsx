@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className='hero-section'>
 
        <div className='container-1'> <h5> <span className='green-text'>This Is How</span></h5>
-        <h5>Good Company</h5>
+        <h5>Good Creators work</h5>
         <h5> For Good </h5>
         <h5> Companies </h5>
         <p>Forget the old rules. You can have the best people.
