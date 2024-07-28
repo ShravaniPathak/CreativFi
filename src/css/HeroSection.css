@@ -1,0 +1,130 @@
+/* src/css/HeroSection.css */
+.hero-section {
+  display: flex;
+  justify-content: space-between; /* Ensure containers are spaced evenly */
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 85%;
+  position: relative;
+}
+
+.green-text {
+  color: #14A800;
+}
+
+.hero-section h5 {
+  line-height: 1px;
+  font-size: 48px;
+  font-family: 'Poly';
+  font-weight: 400;
+  letter-spacing: 5%;
+}
+
+.hero-img {
+  width: 83%;
+  transition: transform 0.3s ease-in-out, opacity 1s ease-out;
+  animation: slideInRight 1s ease-out forwards;
+  opacity: 0; /* Initial state for animation */
+}
+
+.hero-img:hover {
+  transform: scale(1.05); /* Adjust the scale value as needed for the desired zoom effect */
+}
+
+.container-1 {
+  gap: 38px;
+  position: relative;
+  width: 560px;
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0; /* Initial state for animation */
+}
+
+.container-1 h3 {
+  margin: 0.5rem 0;
+}
+
+.container-1 p {
+  max-width: 411px;
+  line-height: 30px;
+  font-family: 'Poppins';
+  letter-spacing: 5%;
+  gap: 38px;
+}
+
+.container-2 {
+  text-align: right;
+}
+
+/* Slide up animation for container-1 */
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Slide in right animation for hero-img */
+@keyframes slideInRight {
+  from {
+      transform: translateX(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.started-button {
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #14A800;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  letter-spacing: 0.1em; /* Equivalent to 10% */
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.started-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0); /* Use your preferred color */
+  border-radius: 50px;
+  z-index: -2;
+}
+
+.started-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #14A800; /* Darker shade of your color */
+  transition: all 0.3s;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.started-button:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.started-button:hover::before {
+  width: 100%;
+}
